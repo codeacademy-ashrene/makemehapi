@@ -21,6 +21,7 @@ describe('server', () => {
     // console.log(response);
     expect(response.result).toEqual({ error: 'Not Found', message: 'Not Found', statusCode: 404 });
   });
+
   const options3 = {
     url: '/12 3',
     method: 'GET',
@@ -30,6 +31,7 @@ describe('server', () => {
     // console.log(response);
     expect(response.result).toEqual('Hello 12%203');
   });
+
   const options4 = {
     url: '/ashrene&roy',
     method: 'GET',

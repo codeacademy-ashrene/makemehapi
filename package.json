@@ -19,13 +19,18 @@
   "homepage": "https://github.com/codeacademy-ashrene/makemehapi#readme",
   "dependencies": {
     "hapi": "^17.8.1",
-    "node-modules": "^1.0.1"
+    "hapi-auth-basic": "^5.0.0",
+    "inert": "^5.1.2",
+    "joi": "^14.3.1",
+    "node-modules": "^1.0.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.15.0",
     "eslint-plugin-jsx-a11y": "^6.2.0",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "nodemon": "^1.18.9"
   }
 }

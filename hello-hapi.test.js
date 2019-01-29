@@ -9,6 +9,6 @@ describe('', () => {
   // process.argv = ['node', 'hello-hapi.js', '3000'];
   it('should return Hello hapi', async () => {
     const response = await server.inject(options);
-    expect(response.result).toEqual('Hellohvgj hapi');
+    expect(response.result).toEqual('Hello hapi');
   });
 });

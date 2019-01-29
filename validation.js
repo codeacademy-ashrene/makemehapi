@@ -1,4 +1,5 @@
 const Hapi = require('hapi');
+const Joi = require('joi');
 
 const server = Hapi.server({
   host: 'localhost',
@@ -6,9 +7,16 @@ const server = Hapi.server({
 });
 
 server.route({
-  path: '/',
+  path: '/chickens/{breed}',
   method: 'GET',
-  handler: (request, h) => 'Hello hapi',
+  handler: (request, h) => `${request.params.breed}`,
+  config: {
+    validate: {
+      params: {
+        breed: Joi.string().required(), // test for string, check joi.validation - postman
+      }
+    }
+  }
 });
 
 if (!module.parent) {
